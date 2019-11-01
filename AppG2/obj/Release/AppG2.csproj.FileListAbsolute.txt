@@ -1,0 +1,13 @@
+C:\Users\Pham Duc\Source\Repos\AppG22019\AppG2\bin\Release\Data\history_learning.txt
+C:\Users\Pham Duc\Source\Repos\AppG22019\AppG2\bin\Release\Data\student.txt
+C:\Users\Pham Duc\Source\Repos\AppG22019\AppG2\bin\Release\AppG2.exe.config
+C:\Users\Pham Duc\Source\Repos\AppG22019\AppG2\bin\Release\AppG2.exe
+C:\Users\Pham Duc\Source\Repos\AppG22019\AppG2\bin\Release\AppG2.pdb
+C:\Users\Pham Duc\Source\Repos\AppG22019\AppG2\obj\Release\AppG2.csprojAssemblyReference.cache
+C:\Users\Pham Duc\Source\Repos\AppG22019\AppG2\obj\Release\AppG2.View.frmHistoryLearningDetail.resources
+C:\Users\Pham Duc\Source\Repos\AppG22019\AppG2\obj\Release\AppG2.frmThongTinSinhVien.resources
+C:\Users\Pham Duc\Source\Repos\AppG22019\AppG2\obj\Release\AppG2.Properties.Resources.resources
+C:\Users\Pham Duc\Source\Repos\AppG22019\AppG2\obj\Release\AppG2.csproj.GenerateResource.cache
+C:\Users\Pham Duc\Source\Repos\AppG22019\AppG2\obj\Release\AppG2.csproj.CoreCompileInputs.cache
+C:\Users\Pham Duc\Source\Repos\AppG22019\AppG2\obj\Release\AppG2.exe
+C:\Users\Pham Duc\Source\Repos\AppG22019\AppG2\obj\Release\AppG2.pdb
