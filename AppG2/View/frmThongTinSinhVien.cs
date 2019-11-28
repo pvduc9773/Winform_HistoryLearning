@@ -22,7 +22,7 @@ namespace AppG2
         string pathAvatarImg;
         string pathStudentDataFile;
         string pathHistoryLeaningDataFile;
-        string idStudent = "16T1021222";
+        string idStudent = "16T1021221";
         #endregion
 
         public frmThongTinSinhVien()
@@ -44,8 +44,9 @@ namespace AppG2
                 picAnhDaiDien.Image = Image.FromStream(fileStream);
                 fileStream.Close();
             }
-            var student = StudentService.getStudent(pathStudentDataFile, idStudent);
-            
+
+            // var student = StudentService.getStudent(pathStudentDataFile, idStudent);
+            var student = StudentService.GetStudentToDB(idStudent);
             if (student == null)
             {
                 throw new Exception("Không tồn tại sinh viên này.");
@@ -53,7 +54,7 @@ namespace AppG2
             else
             {
                 updateDisplayInfoStudent(student);
-                updateTableHistoryLearning(StudentService.getHistoryLearning(pathHistoryLeaningDataFile, idStudent));
+                updateTableHistoryLearning();
             }
         }
 
@@ -134,7 +135,7 @@ namespace AppG2
             {
                 var history = bdsQuaTrinhHocTap.Current as HistoryLearning;
                 StudentService.deleteHistoryLearning(pathHistoryLeaningDataFile, history.idHistoryLearning);
-                updateTableHistoryLearning(StudentService.getHistoryLearning(pathHistoryLeaningDataFile, idStudent));
+                updateTableHistoryLearning();
             } else
             {
 
@@ -150,8 +151,9 @@ namespace AppG2
             cbGioiTinh.Checked = student.gender == Model.GENDER.Male;
         }
 
-        private void updateTableHistoryLearning(List<HistoryLearning> histories)
+        private void updateTableHistoryLearning()
         {
+            var histories = StudentService.GetHistoryLearningsToDB(idStudent);
             if (histories != null)
             {
                 bdsQuaTrinhHocTap.DataSource = histories;
@@ -173,7 +175,7 @@ namespace AppG2
             if (f.ShowDialog() == DialogResult.OK)
             {
                 // Tiến hành nạp lại dữ liệu
-                updateTableHistoryLearning(StudentService.getHistoryLearning(pathHistoryLeaningDataFile, idStudent));
+                updateTableHistoryLearning();
             }
         }
 
@@ -191,7 +193,7 @@ namespace AppG2
                 if (f.ShowDialog() == DialogResult.OK)
                 {
                     // Tiến hành nạp lại dữ liệu
-                    updateTableHistoryLearning(StudentService.getHistoryLearning(pathHistoryLeaningDataFile, idStudent));
+                    updateTableHistoryLearning();
                 }
             }
         }

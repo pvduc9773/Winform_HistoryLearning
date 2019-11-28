@@ -1,4 +1,5 @@
-﻿using AppG2.View;
+﻿using AppG2.Model;
+using AppG2.View;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -17,7 +18,9 @@ namespace AppG2
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new frmContacts());
+            // Application.Run(new frmThongTinSinhVien());
+            // Application.Run(new frmContacts("1"));
+            Application.Run(new frmLogin());
         }
     }
 }

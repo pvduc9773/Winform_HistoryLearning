@@ -35,12 +35,12 @@
             this.btnEdit = new System.Windows.Forms.Button();
             this.btnAdd = new System.Windows.Forms.Button();
             this.dtgContacts = new System.Windows.Forms.DataGridView();
-            this.btnClose = new System.Windows.Forms.Button();
-            this.bdsContacts = new System.Windows.Forms.BindingSource(this.components);
             this.colKey = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.colName = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.colPhone = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.colEmail = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.btnClose = new System.Windows.Forms.Button();
+            this.bdsContacts = new System.Windows.Forms.BindingSource(this.components);
             this.linkA = new System.Windows.Forms.LinkLabel();
             this.linkD = new System.Windows.Forms.LinkLabel();
             this.linkG = new System.Windows.Forms.LinkLabel();
@@ -50,6 +50,7 @@
             this.linkZ = new System.Windows.Forms.LinkLabel();
             this.linkW = new System.Windows.Forms.LinkLabel();
             this.linkJ = new System.Windows.Forms.LinkLabel();
+            this.btnImport = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dtgContacts)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bdsContacts)).BeginInit();
             this.SuspendLayout();
@@ -126,19 +127,6 @@
             this.dtgContacts.TabIndex = 5;
             this.dtgContacts.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.DtgContacts_KeyPress);
             // 
-            // btnClose
-            // 
-            this.btnClose.BackColor = System.Drawing.Color.Lime;
-            this.btnClose.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.btnClose.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.btnClose.Location = new System.Drawing.Point(260, 432);
-            this.btnClose.Name = "btnClose";
-            this.btnClose.Size = new System.Drawing.Size(75, 27);
-            this.btnClose.TabIndex = 6;
-            this.btnClose.Text = "Close";
-            this.btnClose.UseVisualStyleBackColor = false;
-            this.btnClose.Click += new System.EventHandler(this.BtnClose_Click);
-            // 
             // colKey
             // 
             this.colKey.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.ColumnHeader;
@@ -164,6 +152,19 @@
             this.colEmail.DataPropertyName = "email";
             this.colEmail.HeaderText = "Email";
             this.colEmail.Name = "colEmail";
+            // 
+            // btnClose
+            // 
+            this.btnClose.BackColor = System.Drawing.Color.Lime;
+            this.btnClose.DialogResult = System.Windows.Forms.DialogResult.Cancel;
+            this.btnClose.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.btnClose.Location = new System.Drawing.Point(260, 432);
+            this.btnClose.Name = "btnClose";
+            this.btnClose.Size = new System.Drawing.Size(75, 27);
+            this.btnClose.TabIndex = 6;
+            this.btnClose.Text = "Close";
+            this.btnClose.UseVisualStyleBackColor = false;
+            this.btnClose.Click += new System.EventHandler(this.BtnClose_Click);
             // 
             // linkA
             // 
@@ -264,12 +265,23 @@
             this.linkJ.Text = " j ";
             this.linkJ.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.LinkJ_LinkClicked);
             // 
+            // btnImport
+            // 
+            this.btnImport.Location = new System.Drawing.Point(40, 85);
+            this.btnImport.Name = "btnImport";
+            this.btnImport.Size = new System.Drawing.Size(75, 23);
+            this.btnImport.TabIndex = 16;
+            this.btnImport.Text = "Import";
+            this.btnImport.UseVisualStyleBackColor = true;
+            this.btnImport.Click += new System.EventHandler(this.btnImport_Click);
+            // 
             // frmContacts
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.CancelButton = this.btnClose;
             this.ClientSize = new System.Drawing.Size(362, 471);
+            this.Controls.Add(this.btnImport);
             this.Controls.Add(this.linkJ);
             this.Controls.Add(this.linkW);
             this.Controls.Add(this.linkZ);
@@ -318,5 +330,6 @@
         private System.Windows.Forms.LinkLabel linkZ;
         private System.Windows.Forms.LinkLabel linkW;
         private System.Windows.Forms.LinkLabel linkJ;
+        private System.Windows.Forms.Button btnImport;
     }
 }

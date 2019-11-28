@@ -227,5 +227,15 @@ namespace AppG2.Controller
         {
             // Update info student
         }
+
+        public static Student GetStudentToDB(string idStudent)
+        {
+            return new AppG2Context().StudentsDbSet.Where(e => e.idStudent == idStudent).FirstOrDefault();
+        }
+
+        public static List<HistoryLearning> GetHistoryLearningsToDB(string idStudent)
+        {
+            return new AppG2Context().HistoryLearningsDbSet.Where(e => e.idStudent == idStudent).OrderBy(e => e.yearFrom).ToList();
+        }
     }
 }

@@ -41,23 +41,23 @@
             this.txtHoVaTen = new System.Windows.Forms.TextBox();
             this.panel1 = new System.Windows.Forms.Panel();
             this.dtgQuaTrinhHocTap = new System.Windows.Forms.DataGridView();
-            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
             this.toolStripStatusTotalHistoryLearning = new System.Windows.Forms.ToolStripStatusLabel();
             this.toolStrip1 = new System.Windows.Forms.ToolStrip();
             this.toolStripLabel1 = new System.Windows.Forms.ToolStripLabel();
-            this.lnkChonAnhDaiDien = new System.Windows.Forms.LinkLabel();
-            this.menuAvatar = new System.Windows.Forms.ContextMenuStrip(this.components);
-            this.btnCapNhat = new System.Windows.Forms.Button();
-            this.btnBoQua = new System.Windows.Forms.Button();
             this.btnXoa = new System.Windows.Forms.ToolStripButton();
             this.btnSua = new System.Windows.Forms.ToolStripButton();
             this.btnThem = new System.Windows.Forms.ToolStripButton();
-            this.picAnhDaiDien = new System.Windows.Forms.PictureBox();
+            this.lnkChonAnhDaiDien = new System.Windows.Forms.LinkLabel();
+            this.menuAvatar = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.mniXoaAnhDaiDien = new System.Windows.Forms.ToolStripMenuItem();
+            this.btnCapNhat = new System.Windows.Forms.Button();
+            this.btnBoQua = new System.Windows.Forms.Button();
+            this.picAnhDaiDien = new System.Windows.Forms.PictureBox();
             this.bdsQuaTrinhHocTap = new System.Windows.Forms.BindingSource(this.components);
+            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dtgQuaTrinhHocTap)).BeginInit();
             this.statusStrip1.SuspendLayout();
@@ -181,25 +181,6 @@
             this.dtgQuaTrinhHocTap.Size = new System.Drawing.Size(524, 154);
             this.dtgQuaTrinhHocTap.TabIndex = 0;
             // 
-            // Column1
-            // 
-            this.Column1.DataPropertyName = "idHistoryLearning";
-            this.Column1.HeaderText = "STT";
-            this.Column1.Name = "Column1";
-            // 
-            // Column3
-            // 
-            this.Column3.DataPropertyName = "period";
-            this.Column3.HeaderText = "Thời gian học";
-            this.Column3.Name = "Column3";
-            // 
-            // Column4
-            // 
-            this.Column4.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.Column4.DataPropertyName = "address";
-            this.Column4.HeaderText = "Địa chỉ";
-            this.Column4.Name = "Column4";
-            // 
             // statusStrip1
             // 
             this.statusStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -235,52 +216,6 @@
             this.toolStripLabel1.Size = new System.Drawing.Size(100, 22);
             this.toolStripLabel1.Text = "Quá trình học tập";
             // 
-            // lnkChonAnhDaiDien
-            // 
-            this.lnkChonAnhDaiDien.AutoSize = true;
-            this.lnkChonAnhDaiDien.Location = new System.Drawing.Point(428, 143);
-            this.lnkChonAnhDaiDien.Name = "lnkChonAnhDaiDien";
-            this.lnkChonAnhDaiDien.Size = new System.Drawing.Size(94, 13);
-            this.lnkChonAnhDaiDien.TabIndex = 8;
-            this.lnkChonAnhDaiDien.TabStop = true;
-            this.lnkChonAnhDaiDien.Text = "Chọn ảnh đại diện";
-            this.lnkChonAnhDaiDien.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.LnkChonAnhDaiDien_LinkClicked);
-            // 
-            // menuAvatar
-            // 
-            this.menuAvatar.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.mniXoaAnhDaiDien});
-            this.menuAvatar.Name = "menuAvatar";
-            this.menuAvatar.Size = new System.Drawing.Size(163, 26);
-            // 
-            // btnCapNhat
-            // 
-            this.btnCapNhat.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnCapNhat.Image = global::AppG2.Properties.Resources.update;
-            this.btnCapNhat.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnCapNhat.Location = new System.Drawing.Point(353, 374);
-            this.btnCapNhat.Name = "btnCapNhat";
-            this.btnCapNhat.Size = new System.Drawing.Size(96, 33);
-            this.btnCapNhat.TabIndex = 9;
-            this.btnCapNhat.Text = "Cập nhật";
-            this.btnCapNhat.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnCapNhat.UseVisualStyleBackColor = true;
-            this.btnCapNhat.Click += new System.EventHandler(this.BtnCapNhat_Click);
-            // 
-            // btnBoQua
-            // 
-            this.btnBoQua.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnBoQua.Image = global::AppG2.Properties.Resources.deleete2;
-            this.btnBoQua.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnBoQua.Location = new System.Drawing.Point(455, 374);
-            this.btnBoQua.Name = "btnBoQua";
-            this.btnBoQua.Size = new System.Drawing.Size(86, 33);
-            this.btnBoQua.TabIndex = 9;
-            this.btnBoQua.Text = "Bỏ qua";
-            this.btnBoQua.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnBoQua.UseVisualStyleBackColor = true;
-            this.btnBoQua.Click += new System.EventHandler(this.BtnBoQua_Click);
-            // 
             // btnXoa
             // 
             this.btnXoa.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
@@ -311,6 +246,60 @@
             this.btnThem.Text = "Thêm";
             this.btnThem.Click += new System.EventHandler(this.BtnThem_Click);
             // 
+            // lnkChonAnhDaiDien
+            // 
+            this.lnkChonAnhDaiDien.AutoSize = true;
+            this.lnkChonAnhDaiDien.Location = new System.Drawing.Point(428, 143);
+            this.lnkChonAnhDaiDien.Name = "lnkChonAnhDaiDien";
+            this.lnkChonAnhDaiDien.Size = new System.Drawing.Size(94, 13);
+            this.lnkChonAnhDaiDien.TabIndex = 8;
+            this.lnkChonAnhDaiDien.TabStop = true;
+            this.lnkChonAnhDaiDien.Text = "Chọn ảnh đại diện";
+            this.lnkChonAnhDaiDien.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.LnkChonAnhDaiDien_LinkClicked);
+            // 
+            // menuAvatar
+            // 
+            this.menuAvatar.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.mniXoaAnhDaiDien});
+            this.menuAvatar.Name = "menuAvatar";
+            this.menuAvatar.Size = new System.Drawing.Size(163, 26);
+            // 
+            // mniXoaAnhDaiDien
+            // 
+            this.mniXoaAnhDaiDien.Image = global::AppG2.Properties.Resources.deleete2;
+            this.mniXoaAnhDaiDien.Name = "mniXoaAnhDaiDien";
+            this.mniXoaAnhDaiDien.Size = new System.Drawing.Size(162, 22);
+            this.mniXoaAnhDaiDien.Text = "Xóa ảnh đại diện";
+            this.mniXoaAnhDaiDien.Click += new System.EventHandler(this.MniXoaAnhDaiDien_Click);
+            // 
+            // btnCapNhat
+            // 
+            this.btnCapNhat.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnCapNhat.Image = global::AppG2.Properties.Resources.update;
+            this.btnCapNhat.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnCapNhat.Location = new System.Drawing.Point(353, 374);
+            this.btnCapNhat.Name = "btnCapNhat";
+            this.btnCapNhat.Size = new System.Drawing.Size(96, 33);
+            this.btnCapNhat.TabIndex = 9;
+            this.btnCapNhat.Text = "Cập nhật";
+            this.btnCapNhat.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnCapNhat.UseVisualStyleBackColor = true;
+            this.btnCapNhat.Click += new System.EventHandler(this.BtnCapNhat_Click);
+            // 
+            // btnBoQua
+            // 
+            this.btnBoQua.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnBoQua.Image = global::AppG2.Properties.Resources.deleete2;
+            this.btnBoQua.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnBoQua.Location = new System.Drawing.Point(455, 374);
+            this.btnBoQua.Name = "btnBoQua";
+            this.btnBoQua.Size = new System.Drawing.Size(86, 33);
+            this.btnBoQua.TabIndex = 9;
+            this.btnBoQua.Text = "Bỏ qua";
+            this.btnBoQua.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnBoQua.UseVisualStyleBackColor = true;
+            this.btnBoQua.Click += new System.EventHandler(this.BtnBoQua_Click);
+            // 
             // picAnhDaiDien
             // 
             this.picAnhDaiDien.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
@@ -325,13 +314,24 @@
             this.picAnhDaiDien.DragDrop += new System.Windows.Forms.DragEventHandler(this.PicAnhDaiDien_DragDrop);
             this.picAnhDaiDien.DragEnter += new System.Windows.Forms.DragEventHandler(this.PicAnhDaiDien_DragEnter);
             // 
-            // mniXoaAnhDaiDien
+            // Column1
             // 
-            this.mniXoaAnhDaiDien.Image = global::AppG2.Properties.Resources.deleete2;
-            this.mniXoaAnhDaiDien.Name = "mniXoaAnhDaiDien";
-            this.mniXoaAnhDaiDien.Size = new System.Drawing.Size(162, 22);
-            this.mniXoaAnhDaiDien.Text = "Xóa ảnh đại diện";
-            this.mniXoaAnhDaiDien.Click += new System.EventHandler(this.MniXoaAnhDaiDien_Click);
+            this.Column1.DataPropertyName = "idHistoryLearning";
+            this.Column1.HeaderText = "ID";
+            this.Column1.Name = "Column1";
+            // 
+            // Column3
+            // 
+            this.Column3.DataPropertyName = "period";
+            this.Column3.HeaderText = "Thời gian học";
+            this.Column3.Name = "Column3";
+            // 
+            // Column4
+            // 
+            this.Column4.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.Column4.DataPropertyName = "address";
+            this.Column4.HeaderText = "Địa chỉ";
+            this.Column4.Name = "Column4";
             // 
             // frmThongTinSinhVien
             // 

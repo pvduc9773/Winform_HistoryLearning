@@ -16,12 +16,14 @@ namespace AppG2.View
     {
         Contacts contact;
         string pathContactsDataFile;
+        string idUser;
 
-        public frmContactsDetail(string pathContactsDataFile, Contacts contacts = null)
+        public frmContactsDetail(string pathContactsDataFile, string idUser, Contacts contacts = null)
         {
             InitializeComponent();
             this.pathContactsDataFile = pathContactsDataFile;
             this.contact = contacts;
+            this.idUser = idUser;
 
             if (contact != null)
             {
@@ -48,12 +50,12 @@ namespace AppG2.View
             if (contact != null)
             {
                 // Cập nhật
-                ContactsService.updateContacts(pathContactsDataFile, contact.idContacts, txtName.Text.ToString(), txtPhone.Text.ToString(), txtEmail.Text.ToString());
+                ContactsService.updateContacts(pathContactsDataFile, contact.idContacts, txtName.Text.ToString(), txtPhone.Text.ToString(), txtEmail.Text.ToString(), idUser);
             }
             else
             {
                 // Thêm mới
-                ContactsService.addNewContacts(pathContactsDataFile, txtName.Text.ToString(), txtPhone.Text.ToString(), txtEmail.Text.ToString());
+                ContactsService.addNewContacts(pathContactsDataFile, txtName.Text.ToString(), txtPhone.Text.ToString(), txtEmail.Text.ToString(), idUser);
 
             }
             MessageBox.Show("Đã cập nhật dữ liệu thành công");
